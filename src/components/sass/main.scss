@@ -1,0 +1,12 @@
+// import abstracts
+@use "./abstracts" as *;
+// import base
+@use "./base/" as *;
+// import components
+@use './components/navbar';
+@use './components/header';
+@use './components/companies';
+@use './components/cardcontainer';
+@use './components/comments';
+@use './components/contact';
+@use './components/footer';

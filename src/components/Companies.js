@@ -5,14 +5,12 @@ function Companies() {
     <div className="companies">
       <h3>We are blessed to work with leading brands companies </h3>
       <div>
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
-        <img />
+       <a>company</a>
+       <a>company</a>
+       <a>company</a>
+       <a>company</a>
+       <a>company</a>
+       <a>company</a>
       </div>
     </div>
   );

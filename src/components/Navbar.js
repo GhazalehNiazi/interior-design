@@ -2,9 +2,9 @@ import React from "react";
 import Button from "./UI/Button";
 function Navbar() {
   return (
-    <div>
+    <div className="navbar">
       <h3>Plerio.</h3>
-      <div>
+      <ul>
         <li>
           <a href="">Home</a>
         </li>
@@ -20,7 +20,7 @@ function Navbar() {
         <li>
           <a href="">Contact Us</a>
         </li>
-      </div>
+      </ul>
       <Button>Free Consultation</Button>
     </div>
   );

@@ -2,10 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
-      <div>
-        <ul>
-          <li>Services</li>
+    <div className='footer'> 
+      <div className="footer__columnOne">
+        <ul >
+          <li className="footer__columnOne-category">Services</li>
           <li>
             <a href="">Our brands</a>
           </li>
@@ -20,7 +20,7 @@ function Footer() {
           </li>
         </ul>
         <ul>
-          <li>Contact</li>
+          <li className="footer__columnOne-category">Contact</li>
           <li>
             <a href="">Terms and Service</a>
           </li>
@@ -35,7 +35,7 @@ function Footer() {
           </li>
         </ul>
         <ul>
-          <li>Contact</li>
+          <li className="footer__columnOne-category">Contact</li>
           <li>
             <a href="">Facebook</a>
           </li>
@@ -50,7 +50,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div>2022. all rights to Ghazale Niazi</div>
+      <div  className="footer__columnTwo">2022. all rights to Ghazale Niazi</div>
     </div>
   );
 }

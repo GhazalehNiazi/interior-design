@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./UI/Button";
-
+import photo from "../assests/pink-chair.jpg";
 function Header() {
   return (
     <div className="header">
@@ -14,14 +14,16 @@ function Header() {
         <div>
           <Button>Get Started</Button>
           <div>
-            <img />
+         
             Watch Video
           </div>
         </div>
       </div>
       <div className="header__columnTwo">
-        <img />
-        <h3>Astro Project Branding 2022</h3>
+        <div>
+          <img src={photo} />
+        </div>
+        <h2>Astro Project Branding 2022</h2>
       </div>
     </div>
   );

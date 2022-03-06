@@ -9,13 +9,13 @@ const DUMMY_COMMENT = [
   },
 ];
 
-function Comment() {
+function Comment(props) {
   return (
-    <div>
-      <div> {DUMMY_COMMENT[0].name}</div>
-      <div>{DUMMY_COMMENT[0].stars}</div>
-      <div>{DUMMY_COMMENT[0].text}</div>
-      <div>{DUMMY_COMMENT[0].date}</div>
+    <div className={props.className}>
+      <h2> {DUMMY_COMMENT[0].name}</h2>
+      <h2>{DUMMY_COMMENT[0].stars}</h2>
+      <h3>{DUMMY_COMMENT[0].text}</h3>
+      <h3>{DUMMY_COMMENT[0].date}</h3>
     </div>
   );
 }

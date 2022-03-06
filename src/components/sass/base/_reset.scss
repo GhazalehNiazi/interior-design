@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $black;
+}
+h1,
+h2,
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+p,
+div {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+  font-family: "Libre Baskerville", serif;
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+button {
+  font-family: "Kalam", cursive;
+  cursor: pointer;
+  border: black;
+}
+img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
