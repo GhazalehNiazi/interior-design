@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Comment from "./helpers/Comment";
 
 function Comments() {
   return (
-    <div>Comments</div>
-  )
+    <div className="Comments">
+      <div>
+        <div />
+        <h1>What our clients & partners says about us?</h1>
+      </div>
+      <Comment />
+    </div>
+  );
 }
 
-export default Comments
+export default Comments;

@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
 
 function Companies() {
   return (
-    <div>Companies</div>
-  )
+    <div className="companies">
+      <h3>We are blessed to work with leading brands companies </h3>
+      <div>
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+        <img />
+      </div>
+    </div>
+  );
 }
 
-export default Companies
+export default Companies;
