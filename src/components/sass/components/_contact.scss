@@ -1,9 +1,7 @@
 @use "../abstracts" as *;
 .contact {
   background-color: $white;
-  display: flex;
-  flex-direction: row;
-//   justify-content: space-around;
+  @include flex(row , center , center);
   padding: 3rem 6rem;
   &__columnOne {
       width: 80vw;
@@ -15,9 +13,8 @@
       margin-bottom: 0.8rem;
       font-size: 1.5rem;
     }
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between;
+
+    @include flex(column, center,baseline);
     & form input {
       border: none;
       border-bottom: 1px solid $black;
@@ -27,24 +24,19 @@
     }
   }
   &__columnTwo {
-    display: flex;
-    align-items: center;
+    @include flex(row , center , center);
     & div {
       width: 100%;
-      // height: auto;
       & img {
-        width: 20vw;
-        max-height:22vw;
-        // border-radius: 35px;
+        @include wh(22vw,22vw);
       }
     }
     & h2 {
-      font-size: 2.5rem;
+      color: $green;
       width: 90%;
       position: relative;
-    //   bottom: rem;
       left: -5rem;
-      color: $green;
+      font-size: 2.5rem;
     }
   }
 }

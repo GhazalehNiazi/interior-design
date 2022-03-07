@@ -36,11 +36,9 @@
   }
 }
 .header__columnTwo {
-  display: flex;
-  align-items: center;
+  @include flex (row,center,center);
   & div {
     width: 100%;
-    // height: auto;
     & img {
       width: 20vw;
       border-radius: 35px;

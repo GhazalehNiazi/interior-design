@@ -2,15 +2,12 @@
 .CardContainer {
   background-color: $white;
   padding: 2rem;
-  display: flex;
-  // justify-content: space-between;
+  @include flex(row , center , center);
   &__card {
     padding: 2rem;
-    width: 25rem;
     margin: 0 1rem;
-    height: 20rem;
-    display: flex;
-    align-items: center;
+    @include flex(row , center , center);
+    @include wh(25rem , 20rem);
   }
   & .active {
     background-color: $green;

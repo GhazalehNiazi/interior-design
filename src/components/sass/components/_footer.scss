@@ -2,11 +2,9 @@
 .footer {
   background-color: $green;
   padding: 3rem;
-  display: flex;
-  justify-content: space-between;
+  @include flex(row , space-between , baseline);
   &__columnOne {
-    display: flex;
-    justify-content: space-between;
+    @include flex(row , space-between , baseline);
     width: 50%;
     & li {
       margin-bottom: 0.5rem;
@@ -18,7 +16,6 @@
     }
 
     & li a {
-      // margin-bottom: 1rem;
       color: $white;
       font-size: 0.9rem;
     }

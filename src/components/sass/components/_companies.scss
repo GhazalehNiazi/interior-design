@@ -2,9 +2,8 @@
 .companies {
   background-color: $white;
   padding: 3rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column , center , center);
+
   & h3 {
     font-size: 1.5rem;
     margin-bottom: 3rem;

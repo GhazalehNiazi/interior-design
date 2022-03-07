@@ -1,19 +1,16 @@
-@use '../abstracts' as *;
-.navbar{
-    padding: 2rem 5rem 0 5rem;
-    background-color: $header_color;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    & ul{
-        display: flex;
-        justify-content: space-between;
-        & li{
-            margin: 0 1rem;
-        }
+@use "../abstracts" as *;
+.navbar {
+  padding: 2rem 5rem 0 5rem;
+  background-color: $header_color;
+  @include flex(row, space-between, baseline);
+  & ul {
+    @include flex(row, space-between, center);
+    & li {
+      margin: 0 1rem;
     }
-     & button{
-         padding: 0.5rem 2rem;
-         border: 0.3px black solid;
-     }
+  }
+  & button {
+    padding: 0.5rem 2rem;
+    border: 0.3px black solid;
+  }
 }
