@@ -2,13 +2,29 @@
 .companies {
   background-color: $white;
   padding: 3rem 0;
-  @include flex(column , center , center);
-
+  width: 100vw;
+  @include flex(column, center, center);
+  @include mq($sm) {
+    padding: 1rem 0 0 0;
+  }
   & h3 {
     font-size: 1.5rem;
     margin-bottom: 3rem;
+    @include mq($sm) {
+      padding: 0 ;
+    }
   }
- & div a{
-     margin: 0 2.3rem;
- }
+  & div {
+    @include mq($sm) {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+    }
+  }
+  & div a {
+    margin: 0 2.3rem;
+    // @include mq($sm) {
+    //   @include flex(column, center, center);
+    //   flex-wrap: wrap;
+    // }
+  }
 }

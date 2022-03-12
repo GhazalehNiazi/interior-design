@@ -2,16 +2,29 @@
 .CardContainer {
   background-color: $white;
   padding: 2rem;
-  @include flex(row , center , center);
+  @include flex(row, center, center);
+  @include mq($sm) {
+    flex-direction: column;
+  }
   &__card {
     padding: 2rem;
     margin: 0 1rem;
-    @include flex(row , center , center);
-    @include wh(25rem , 20rem);
+    @include flex(row, center, center);
+    @include wh(25rem, 20rem);
+
+    @include mq($sm) {
+      @include wh(20rem, min-content);
+      padding: 1rem 2rem ;
+      
+    }
   }
   & .active {
     background-color: $green;
     width: 50rem;
+    @include mq($sm) {
+      @include wh(18.5rem, min-content);
+      // padding: 0 2rem ;
+    }
     & h2 {
       color: $white;
       margin: 0 0 2vw 0;
@@ -26,8 +39,8 @@
     &__columnTwo {
       width: 100%;
       padding: 0;
-      
-      & img{
+
+      & img {
         clip-path: ellipse(40% 40% at 50% 50%);
       }
     }

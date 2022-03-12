@@ -1,16 +1,41 @@
 @use "../abstracts" as *;
 .navbar {
   padding: 2rem 5rem 0 5rem;
+  max-width: 100vw;
   background-color: $header_color;
   @include flex(row, space-between, baseline);
+  flex-wrap: wrap;
+  @include mq($sm) {
+    font-size: 0.8rem;
+    padding: 2rem 1rem 0 1rem;
+  }
+
   & ul {
     @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    @include mq($sm) {
+      margin: 1rem 0;
+    }
     & li {
       margin: 0 1rem;
+      @include mq($sm) {
+        font-size: 0.2rem;
+        margin: 0.5rem 0.1rem;
+      }
+      & a {
+        @include mq($sm) {
+          font-size: 0.1rem;
+        }
+      }
     }
   }
   & button {
     padding: 0.5rem 2rem;
     border: 0.3px black solid;
+    @include mq($sm) {
+      align-self: center;
+      padding: 0.5rem 0.5rem;
+      font-size: 0.5rem;
+    }
   }
 }
