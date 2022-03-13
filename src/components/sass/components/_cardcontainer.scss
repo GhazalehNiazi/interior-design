@@ -3,7 +3,7 @@
   background-color: $white;
   padding: 2rem;
   @include flex(row, center, center);
-  @include mq($sm) {
+  @include mq($md) {
     flex-direction: column;
   }
   &__card {
@@ -12,7 +12,7 @@
     @include flex(row, center, center);
     @include wh(25rem, 20rem);
 
-    @include mq($sm) {
+    @include mq($md) {
       @include wh(20rem, min-content);
       padding: 1rem 2rem ;
       
@@ -21,7 +21,7 @@
   & .active {
     background-color: $green;
     width: 50rem;
-    @include mq($sm) {
+    @include mq($md) {
       @include wh(18.5rem, min-content);
       // padding: 0 2rem ;
     }

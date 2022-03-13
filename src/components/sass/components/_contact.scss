@@ -3,13 +3,13 @@
   background-color: $white;
   padding: 3rem 6rem;
   @include flex(row, center, center);
-  @include mq($sm) {
+  @include mq($md) {
     flex-direction: column-reverse;
     padding: 0 0.5rem 1rem 0;
   }
   &__columnOne {
     width: 80vw;
-    @include mq($sm) {
+    @include mq($md) {
       width: 100vw;
       padding-left: 1rem;
     }
@@ -17,7 +17,7 @@
     & h1 {
       margin-bottom: 10rem;
       font-size: 2.5rem;
-      @include mq($sm) {
+      @include mq($md) {
         width: 100vw;
         padding-left: 1rem;
         margin-bottom: 2rem;
@@ -40,7 +40,7 @@
 
   &__columnTwo {
     @include flex(row, center, center);
-    @include mq($sm) {
+    @include mq($md) {
       // width: max-content;
       padding-bottom: 1rem;
     }
@@ -49,7 +49,7 @@
       & img {
         @include wh(22vw, 22vw);
 
-        @include mq($sm) {
+        @include mq($md) {
           @include wh(50vw, 50vw);
         }
       }
@@ -60,7 +60,7 @@
       position: relative;
       left: -5rem;
       font-size: 2.5rem;
-      @include mq($sm) {
+      @include mq($md) {
         left: -3rem;
         font-size: 1.6rem;
         width: 60%;
