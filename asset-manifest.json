@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/interior-design/static/css/main.e93e330a.css",
+    "main.css": "/interior-design/static/css/main.df1705d7.css",
     "main.js": "/interior-design/static/js/main.7dd1f015.js",
     "static/media/pink-chair.jpg": "/interior-design/static/media/pink-chair.42803bb33f46fd8f7565.jpg",
     "static/media/avery-klein-JaXs8Tk5Iww-unsplash.jpg": "/interior-design/static/media/avery-klein-JaXs8Tk5Iww-unsplash.42413ba911e3438e17cb.jpg",
     "index.html": "/interior-design/index.html",
-    "main.e93e330a.css.map": "/interior-design/static/css/main.e93e330a.css.map",
+    "main.df1705d7.css.map": "/interior-design/static/css/main.df1705d7.css.map",
     "main.7dd1f015.js.map": "/interior-design/static/js/main.7dd1f015.js.map"
   },
   "entrypoints": [
-    "static/css/main.e93e330a.css",
+    "static/css/main.df1705d7.css",
     "static/js/main.7dd1f015.js"
   ]
 }
